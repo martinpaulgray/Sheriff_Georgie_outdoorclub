@@ -309,40 +309,24 @@ padding-top: 30px;
 
 
 /* Responsive layout - when the screen is less than 800px wide, make the three columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 1000px) {
  
-.left {
-  width: 10%;
-   float: left;
-}
-
-.left img {
-display: none;
-}
-
-
-.right {
-  width: 40%;
-  padding-right: 10px;
-  padding-left: 20px;
-   float: left;
-}
-
-.right p{
-  font-size: 16px;
-}
-
-.middle {
-  width: 50%;
+.column{
   justify-content: center;
 }
 
-#store{
-padding-top: 30px;
-}
+.column p{
+text-align: center;
 }
 
+.column h1{
+text-align: center;
+}
 
+  main{
+  position: absolute;
+  top: 300px;
+}
 
 
 /* Responsive layout - when the screen is less than 600px wide, make the three columns stack on top of each other instead of next to each other */
@@ -351,22 +335,7 @@ padding-top: 30px;
     flex-direction: column;
     text-align: center;
   }
-  .left {
-margin: auto;
- width: 40%;
-}
-  .left img {
-display: none;
-}
 
-
-.middle {
-margin: auto;
- width: 60%;
-}
-.right {
-  width: 100%;
-}
   main{
   position: absolute;
   top: 300px;
